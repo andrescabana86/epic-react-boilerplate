@@ -71,3 +71,17 @@ Following the next configuration:
   }
 }
 ```
+
+## Package.json Scripts
+```json5
+{
+  // build the entire project into /build folder
+  "build": "webpack --config webpack.config.js",
+  // format with prettier
+  "format": "prettier --write \"**/*.+(ts|tsx|json)\"",
+  // run eslint fix rules
+  "lint": "eslint src/** --fix",
+  // start project in develop mode "localhost:8080"
+  "start": "webpack serve --progress --color --config webpack.config.js"
+}
+```
