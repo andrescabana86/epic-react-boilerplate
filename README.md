@@ -20,3 +20,54 @@ Following the next rules:
 }
 
 ```
+
+## ESLint
+Following the next configuration:
+```json5
+{
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint",
+    "html"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": "off"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  }
+}
+
+```
+
+## TSConfig
+Following the next configuration:
+```json5
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true, // allows you to write an import like pattern
+    "baseUrl": "./src", // root folder where you can do absolute file resolution
+    "jsx": "react", // react mode -> <div /> converts into React.createElement("div")
+    "module": "ESNext", // refers to whatever the next version is at time of writing this code
+    "noImplicitAny": true,
+    "outDir": "./build", // files will be emitted into this directory
+    "paths": { // aliases
+      "@components/*": ["components/*"]
+    },
+    "sourceMap": true, // Enables the generation of sourcemap files
+    "target": "ES6" // Modern browsers support all ES6 features
+  }
+}
+```
