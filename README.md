@@ -2,6 +2,8 @@
 In this project I manually configured all the needed tools 
 for starting a project from scratch.
 
+## Working demo
+You can check that the project is working by clicking on [this](https://epic-react-boilerplate.herokuapp.com/) link
 ## IDE Webstorm
 The entire project was developed using Webstorm.
 
