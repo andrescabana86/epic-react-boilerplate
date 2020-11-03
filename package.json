@@ -2,7 +2,10 @@
   "name": "epic-react-boilerplate",
   "version": "1.0.0",
   "description": "Epic React Training with Kent C. Dodds.",
-  "main": "index.js",
+  "engines": {
+    "node": "14.14.x",
+    "npm": "6.14.x"
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "format": "prettier --write \"**/*.+(ts|tsx|json)\"",
