@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import './app.component.sass'
+import './app.sass'
 
 export class App extends PureComponent {
   render() {

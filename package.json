@@ -11,7 +11,8 @@
     "format": "prettier --write \"**/*.+(ts|tsx|json)\"",
     "lint": "eslint src/** --fix",
     "serve": "live-server ./build",
-    "start": "webpack serve --progress --color --config webpack.config.js"
+    "start": "webpack serve --progress --color --config webpack.config.js",
+    "test": "jest"
   },
   "keywords": [
     "react",
@@ -21,7 +22,16 @@
   ],
   "author": "@andrescabana86",
   "license": "MIT",
+  "jest": {
+    "preset": "ts-jest",
+    "moduleNameMapper": {
+      "^@components(.*)$": "<rootDir>/src/components$1",
+      "^.+\\.(sass)$": "identity-obj-proxy"
+    }
+  },
   "devDependencies": {
+    "@testing-library/react": "^11.1.1",
+    "@types/jest": "^26.0.15",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/webpack": "^4.41.23",
@@ -32,7 +42,10 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-html": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "prettier": "^2.1.2",
+    "ts-jest": "^26.4.3",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
   },
