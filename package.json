@@ -23,11 +23,12 @@
   "author": "@andrescabana86",
   "license": "MIT",
   "jest": {
-    "preset": "ts-jest",
     "moduleNameMapper": {
       "^@components(.*)$": "<rootDir>/src/components$1",
       "^.+\\.(sass)$": "identity-obj-proxy"
-    }
+    },
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom"
   },
   "devDependencies": {
     "@testing-library/react": "^11.1.1",

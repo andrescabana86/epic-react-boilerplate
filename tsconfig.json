@@ -12,6 +12,7 @@
       "@components/*": ["components/*"]
     },
     "sourceMap": true,
+    "moduleResolution": "node",
     "target": "es6"
   },
   "exclude": [
