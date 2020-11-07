@@ -1,9 +1,12 @@
-import * as React from 'react'
-import { render } from '@testing-library/react'
+import React from 'react'
+import { render, cleanup } from '@testing-library/react'
 import { App } from '@components/app/app'
 
 describe('<App />', () => {
+  afterEach(cleanup)
+
   it('should render app component', () => {
-    render(<App />)
+    const { asFragment } = render(<App />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

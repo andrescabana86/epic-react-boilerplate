@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import './app.sass'
 
 export class App extends React.PureComponent {
