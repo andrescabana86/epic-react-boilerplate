@@ -3,6 +3,14 @@ import './app.sass'
 
 export class App extends React.PureComponent {
   render() {
-    return <h1 className="app">React / Typescript Project 2020</h1>
+    return (
+      <section className="app">
+        <header className="app__header">
+          <h1 data-testid="title" className="app__header-title">
+            Welcome to my boilerplate
+          </h1>
+        </header>
+      </section>
+    )
   }
 }

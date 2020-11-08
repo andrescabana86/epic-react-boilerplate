@@ -1,11 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> should render app component 1`] = `
+exports[`<App /> should render 1`] = `
 <DocumentFragment>
-  <h1
+  <section
     class="app"
   >
-    React / Typescript Project 2020
-  </h1>
+    <header
+      class="app__header"
+    >
+      <h1
+        class="app__header-title"
+        data-testid="title"
+      >
+        Welcome to my boilerplate
+      </h1>
+    </header>
+  </section>
 </DocumentFragment>
 `;
