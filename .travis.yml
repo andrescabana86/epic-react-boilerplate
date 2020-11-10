@@ -5,10 +5,9 @@ branches:
   only:
     - main
 deploy:
-  - provider: heroku
-    api_key:
-      secure: OI4Pmmr96RrRIg3bxy3X4849xibiDvrOSdG4Kj8LhQrFwV4Gp6YYe6J5vCM59XbLA0+eLZR9s4JAEWMFLyueHAkQ78Vq88x6jIyEmcJZ+ANG3XVXq+033JzZ2fcUKVHnJ2fCvh9fNpiB1wrsu3iqDf1ETe3e0ccOEsFZ5Oh7vRby33QN4/hJHOnfXUn/3/nwaVll3yTJv2Q/t/Bi5r7xyQjLsM2vfHBnQg8fuS35tNPLkk+PomuHyUbpblQzk0K/pAJk0olnDwqnqGEnQJRvS+pFUCJyUyKoerbHe8/1CSgvSwaMomrsTkaFQG0TIo0UJOgEHwdBFE12kpLjberF/u4WTI87Q3JNcdSwOs/fr7hNkDFCTHM0m8OJPQRyO9LBleQtcDfhMIeJjgMkrGRan/nxTEQM9nfUCNWWgfYTFTwig3W45DZ3cuR14K1n0jUwEpPWW6/0qNv0WtI5mqkv2U6JF1j2xIphpZc+J0z94o+TT82a46BOX98Mm+paL1EAkih+HcZTQmciHEpzvC4ZchZu21smWtdgyZLis4TO0RtVXpOSslBzJHotFNXMKmJA0vnal24+SvfXlzJ09G7wG8lb7UceLMa4yHcVZKyri91OftOc6b0sc7MXCI83yBoDMXimD+Pgsdid/NXDj6oTRUec7rIWzEyiNe31SDMbS8w=
-    app: epic-react-boilerplate
-    on:
-      branch: main:master
+  provider: heroku
+  api_key:
+    secure: OI4Pmmr96RrRIg3bxy3X4849xibiDvrOSdG4Kj8LhQrFwV4Gp6YYe6J5vCM59XbLA0+eLZR9s4JAEWMFLyueHAkQ78Vq88x6jIyEmcJZ+ANG3XVXq+033JzZ2fcUKVHnJ2fCvh9fNpiB1wrsu3iqDf1ETe3e0ccOEsFZ5Oh7vRby33QN4/hJHOnfXUn/3/nwaVll3yTJv2Q/t/Bi5r7xyQjLsM2vfHBnQg8fuS35tNPLkk+PomuHyUbpblQzk0K/pAJk0olnDwqnqGEnQJRvS+pFUCJyUyKoerbHe8/1CSgvSwaMomrsTkaFQG0TIo0UJOgEHwdBFE12kpLjberF/u4WTI87Q3JNcdSwOs/fr7hNkDFCTHM0m8OJPQRyO9LBleQtcDfhMIeJjgMkrGRan/nxTEQM9nfUCNWWgfYTFTwig3W45DZ3cuR14K1n0jUwEpPWW6/0qNv0WtI5mqkv2U6JF1j2xIphpZc+J0z94o+TT82a46BOX98Mm+paL1EAkih+HcZTQmciHEpzvC4ZchZu21smWtdgyZLis4TO0RtVXpOSslBzJHotFNXMKmJA0vnal24+SvfXlzJ09G7wG8lb7UceLMa4yHcVZKyri91OftOc6b0sc7MXCI83yBoDMXimD+Pgsdid/NXDj6oTRUec7rIWzEyiNe31SDMbS8w=
+  app:
+    master: epic-react-boilerplate
 
