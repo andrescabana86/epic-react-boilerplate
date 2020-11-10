@@ -1,11 +1,12 @@
 language: node_js
 node_js:
 - 14
-branches:
-  only:
-  - main
 deploy:
   provider: heroku
+  app: epic-react-boilerplate
+  branches:
+    only:
+      - main
   on:
     branch: master
   api_key:
